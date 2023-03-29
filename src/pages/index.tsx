@@ -30,7 +30,10 @@ export default function Home() {
           </nav>
           <div className="flex justify-between flex-1 mx-auto max-w-6xl  p-2 items-center">
             <div className="flex-1">
-              <h1 className="font-semibold leading-tight text-4xl md:text-6xl">
+              <span className="px-5 py-1 rounded-sm bg-[#69F0AE] text-[#268d5b] bg-opacity-20 text-sm">
+                BETA
+              </span>
+              <h1 className="font-semibold mt-1 leading-tight text-4xl md:text-6xl">
                 {"Let replyBy."}
                 <span style={{ color: "#69F0AE" }}>ai</span>
                 {" simplify your email writing ; )"}
