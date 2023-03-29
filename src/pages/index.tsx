@@ -1,11 +1,18 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import Link from "next/link";
+import * as animationData from "@/assets/auto-writing-ai.json";
+import Lottie from "react-lottie";
 
 export default function Home() {
+  const lottieOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <>
       <Head>
@@ -14,110 +21,50 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <main>
+        <section className="flex flex-col min-h-screen ">
+          <nav className="flex items-center w-full justify-between h-20 px-5">
+            <Link href={"/"}>
+              <img src="/replybyai.svg" className="h-10" alt="ReplyBy.ai" />
+            </Link>
+          </nav>
+          <div className="flex justify-between flex-1 mx-auto max-w-6xl  p-2 items-center">
+            <div className="flex-1">
+              <h1 className="font-semibold leading-tight text-4xl md:text-6xl">
+                {"Let replyBy."}
+                <span style={{ color: "#69F0AE" }}>ai</span>
+                {" simplify your email writing ; )"}
+              </h1>
+              <p className="text-xl md:text-2xl font-normal mt-2">
+                {
+                  "Revolutionize your email game with our AI-driven Chrome extension for automated writing."
+                }
+              </p>
+              <div className="mt-5"></div>
+              <button className="px-5 py-3 bg-black transition-colors duration-200 text-white hover:text-black hover:bg-[#69F0AE]">
+                Add to Chrome
+              </button>
+            </div>
+            <div className="flex-1 hidden lg:block">
+              <Lottie options={lottieOptions}></Lottie>
+            </div>
           </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+        </section>
+        <footer className="mt-20">
+          <div className="custom-screen py-8 border-t">
+            <p className="text-gray-500 text-center">
+              Powered by{" "}
+              <a
+                target="_blank"
+                href="https://extensionerp.com/"
+                className="text-blue-500 underline"
+              >
+                Extension Technologies
+              </a>
+            </p>
           </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+        </footer>
       </main>
     </>
-  )
+  );
 }
