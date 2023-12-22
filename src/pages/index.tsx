@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { IoIosArrowDropdown } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -40,10 +41,18 @@ export default function Home() {
               </p>
               <div className="mt-16"></div>
               <div className="relative inline-flex  group">
-                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                <div className="absolute transitiona-all duration-1000 opacity-50 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                 <button className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                   Coming Soon
                 </button>
+              </div>
+              <div className="absolute bottom-10 ">
+                <div className="relative inline-flex animate-bounce  group">
+                  <div className="absolute transitiona-all duration-1000 opacity-10 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-30 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                  <button className="relative inline-flex items-center justify-center p-2 text-lg font-bold text-white transition-all duration-200 font-pj rounded-full focus:outline-none  focus:ring-offset-2 focus:ring-gray-900">
+                    <IoIosArrowDropdown size={34} />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
