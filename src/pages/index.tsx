@@ -31,7 +31,7 @@ export default function Home() {
                 BETA
               </span> */}
               <h1 className="font-light mt-1 text-center leading-tight text-4xl md:text-6xl">
-                <span className="font-medium bg-gradient-to-r from-blue-600 to-blue-200 bg-clip-text text-transparent">
+                <span className="font-medium bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">
                   convogen
                 </span>
                 {",  because even robots deserve good conversation"}
@@ -41,14 +41,14 @@ export default function Home() {
               </p>
               <div className="mt-16"></div>
               <div className="relative inline-flex  group">
-                <div className="absolute transitiona-all duration-1000 opacity-50 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                <div className="absolute transitiona-all duration-1000 opacity-50 -inset-px bg-gradient-to-r from-teal-500 via-indigo-500 to-blue-500 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                 <button className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                   Coming Soon
                 </button>
               </div>
               <div className="absolute bottom-10 ">
                 <div className="relative inline-flex animate-bounce  group">
-                  <div className="absolute transitiona-all duration-1000 opacity-10 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-30 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                  <div className="absolute transitiona-all duration-1000 opacity-10 -inset-px bg-gradient-to-r from-teal-500 via-indigo-500 to-blue-500 rounded-xl blur-lg group-hover:opacity-30 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                   <button className="relative inline-flex items-center justify-center p-2 text-lg font-bold text-white transition-all duration-200 font-pj rounded-full focus:outline-none  focus:ring-offset-2 focus:ring-gray-900">
                     <IoIosArrowDropdown size={34} />
                   </button>
