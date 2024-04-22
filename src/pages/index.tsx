@@ -34,7 +34,7 @@ export default function Home() {
           <div className="flex justify-between flex-1 mx-auto max-w-6xl  p-2 items-center">
             <div className="flex-1 text-gray-200 flex flex-col items-center">
               <span className=" px-5 py-1 rounded-full text-orange-400 border border-orange-400">
-                Beta v1.1.0
+                Latest Release v1.2.0
               </span>
               <h1 className="font-light mt-5 text-center leading-tight text-4xl md:text-6xl">
                 <span className="font-medium bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent">
@@ -60,7 +60,7 @@ export default function Home() {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/vineyrawat/convogen/releases/download/v1.1.0/convogen.apk"
+                  href="https://github.com/vineyrawat/convogen/releases/download/v1.2.0/convogen.apk"
                   target="_blank"
                 >
                   <div className="relative inline-flex  group">
